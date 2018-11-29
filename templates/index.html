@@ -11,8 +11,8 @@
                 {% for prod in prod_list %}
                     <li>{{ prod }}</li>
                 {% endfor %}
-	<ul>
-	  <p>Product metadata: {{ products_meta  }}</p>
+	</ul>
+	  <p>Product metadata: {{ products_meta }}</p>
             {% else %}
                 <font color="red">There was an error calling Product API...</font>
             {% endif %} 
@@ -25,7 +25,7 @@
                     <li> {{ listing }}</li>
                 {% endfor %}
 	</ul>
-	  <p>Listing metadata: {{ listings_meta  }}</p>
+	  <p>Listing metadata: {{ listings_meta }}</p>
             {% else %}
                 <font color="red">There was a problem calling the Listing API...</font>
             {% endif %}
